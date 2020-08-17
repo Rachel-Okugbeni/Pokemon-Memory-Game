@@ -21,7 +21,7 @@ header,
 
 h3 {
     display: inline;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .game-board {
@@ -43,4 +43,11 @@ button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+body {
+    font-size: 20px;    
+}
 }
