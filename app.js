@@ -5,31 +5,31 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
     {
         name: 'pikachu',
-        img: 'Images/pikachu.png'
+        img: './Images/pikachu.png'
     },
     {
         name: 'pikachu',
-        img: 'Images/pikachu.png'
+        img: './Images/pikachu.png'
     },
     {
         name: 'bulbasaur',
-        img: 'Images/bulbasaur.png'
+        img: './Images/bulbasaur.png'
     },
     {
         name: 'bulbasaur',
-        img: 'Images/bulbasaur.png'
+        img: './Images/bulbasaur.png'
     },
     {
         name: 'butterfree',
-        img: 'Images/butterfree.png'
+        img: './Images/butterfree.png'
     },
     {
         name: 'butterfree',
-        img: 'Images/butterfree.png'
+        img: './Images/butterfree.png'
     },
     {
         name: 'charmander',
-        img: 'Images/charmander.png'
+        img: './Images/charmander.png'
     },
     {
         name: 'charmander',
@@ -37,19 +37,19 @@ const cardArray = [
     },
     {
         name: 'mewtwo',
-        img: 'Images/mewtwo.png'
+        img: './Images/mewtwo.png'
     },
     {
         name: 'mewtwo',
-        img: 'Images/mewtwo.png'
+        img: './Images/mewtwo.png'
     },
     {
         name: 'squirtle',
-        img: 'Images/squirtle.png'
+        img: './Images/squirtle.png'
     },
     {
         name: 'squirtle',
-        img: 'Images/squirtle.png'
+        img: './Images/squirtle.png'
     }
 ]
 
@@ -75,7 +75,7 @@ cardArray.sort(() => 0.5 - Math.random())
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         let card = document.createElement('img')
-        card.setAttribute('src', 'Images/pokeball.png')
+        card.setAttribute('src', './Images/pokeball.png')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         board.appendChild(card)
@@ -113,12 +113,12 @@ function checkForMatch() {
     const cardOneId = chosenCardsId[0]
     const cardTwoId = chosenCardsId[1]
     if (chosenCards[0] === chosenCards[1]) {
-        cards[cardOneId].setAttribute('src', 'Images/blank.png')
-        cards[cardTwoId].setAttribute('src', 'Images/blank.png')
+        cards[cardOneId].setAttribute('src', './Images/blank.png')
+        cards[cardTwoId].setAttribute('src', './Images/blank.png')
         matches.push(chosenCards[0])
     } else {
-        cards[cardOneId].setAttribute('src', 'Images/pokeball.png')
-        cards[cardTwoId].setAttribute('src', 'Images/pokeball.png')
+        cards[cardOneId].setAttribute('src', './Images/pokeball.png')
+        cards[cardTwoId].setAttribute('src', './Images/pokeball.png')
     }
 
     chosenCards = []
