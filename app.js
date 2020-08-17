@@ -132,7 +132,7 @@ function checkForMatch() {
 
  let timer = setInterval(function(){
     timeLeft--;
-    displayTimer.textContent = timeLeft;
+    displayTimer.textContent = timeLeft  + ' secs';
     if(timeLeft <= 0) {
         clearInterval(timer);
         gameOver();
