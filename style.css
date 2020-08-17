@@ -1,0 +1,46 @@
+body {
+    background-color: #1a95fa;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+header {
+    font-size: 2em;
+}
+
+header,
+.stats {
+    text-shadow: 2px 2px #ff0000;
+}
+
+.stats {
+    margin: 10px;
+}
+
+h3 {
+    display: inline;
+    padding: 20px;
+}
+
+.game-board {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 360px;
+    border: 5px solid white;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: #ff0000;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
