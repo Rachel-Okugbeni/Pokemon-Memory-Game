@@ -142,7 +142,7 @@ function checkForMatch() {
 
 // If all pairs are found within the time limit
 function gameWin() {
-    displayGameOver.textContent = `Congratulations! You found all ${matches.length} pairs!`
+    displayGameOver.textContent = `Congratulations! You found all ${matches.length} pairs in ${60-timeLeft} seconds!`
 }
 
 //If timer runs out before all pairs are found
